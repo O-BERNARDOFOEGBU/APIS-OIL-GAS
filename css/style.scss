@@ -1,14 +1,13 @@
 $black: #000000;
 $white: #ffffff;
-$primary1:#fec016;
+$primary1: #fec016;
 
 @mixin main-font {
   font-family: "Poppins", sans-serif;
 }
 
 @mixin secondary-font {
-  font-family: 'Open Sans', sans-serif;
-
+  font-family: "Open Sans", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2) {
@@ -69,7 +68,6 @@ body {
     text-transform: uppercase;
     position: relative;
 
-
     &::before,
     &::after {
       content: "";
@@ -114,7 +112,7 @@ body {
   height: auto;
 }
 
-.header_section {}
+// .header_section {}
 
 .header_section .container-fluid {
   padding-right: 25px;
@@ -161,11 +159,13 @@ a:focus {
   box-shadow: none;
 }
 
+.btn_disabled {
+  background-color: #ffffcc; /* Light shade of yellow */
+}
 
 .user_option {
   display: flex;
   align-items: center;
-
 }
 
 .custom_nav-container .nav_search-btn {
@@ -188,7 +188,6 @@ a:focus {
     font-size: 24px;
     color: $white;
   }
-
 }
 
 .custom_nav-container {
@@ -213,7 +212,6 @@ a:focus {
   align-items: center;
   color: $white;
 
-
   .detail-box {
     text-align: center;
 
@@ -234,7 +232,6 @@ a:focus {
       @include hero_btn($white, $black, 10px, 55px);
       border-radius: 20px 20px 0 20px;
       margin-top: 35px;
-
     }
 
     margin-bottom: 110px;
@@ -250,7 +247,6 @@ a:focus {
       border: 3px solid $white;
       border-radius: 100%;
       opacity: 1;
-
     }
   }
 }
@@ -364,9 +360,7 @@ a:focus {
   }
 }
 
-
 // end who section
-
 
 // work section
 .work_section {
@@ -389,15 +383,12 @@ a:focus {
         width: 43.5%;
       }
 
-
       &.b-1,
       &.b-4 {
         width: 56.5%;
       }
     }
   }
-
-
 }
 
 // end work section
@@ -451,10 +442,8 @@ a:focus {
         width: 15px;
         margin: 35px 0;
       }
-
     }
   }
-
 
   .carousel-wrap {
     margin: 0 auto;
@@ -462,8 +451,7 @@ a:focus {
     position: relative;
   }
 
-
-  .owl-nav>div {
+  .owl-nav > div {
     margin-top: -26px;
     position: absolute;
     top: 50%;
@@ -484,7 +472,7 @@ a:focus {
     outline: none;
 
     &:hover {
-      background-color: rgba($color: #000000, $alpha: .8);
+      background-color: rgba($color: #000000, $alpha: 0.8);
     }
   }
 
@@ -507,9 +495,8 @@ a:focus {
 
   .owl-item.active.center {
     .box {
-      box-shadow: 0 0 20px 0 rgba($color: #000000, $alpha: .2);
+      box-shadow: 0 0 20px 0 rgba($color: #000000, $alpha: 0.2);
     }
-
   }
 }
 
@@ -526,7 +513,6 @@ a:focus {
     margin: 30px 0;
   }
 
-
   h2 {
     font-weight: bold;
   }
@@ -537,10 +523,7 @@ a:focus {
   }
 }
 
-
 // end target section
-
-
 
 /* contact section */
 .contact_section {
@@ -559,7 +542,7 @@ a:focus {
       width: 100%;
       margin: 15px 0;
       padding: 10px 20px;
-      border: 1px solid rgba($color: #000000, $alpha: .4);
+      border: 1px solid rgba($color: #000000, $alpha: 0.4);
       border-radius: 30px;
 
       &.input_message {
@@ -567,7 +550,7 @@ a:focus {
       }
 
       &::placeholder {
-        color: rgba($color: #000000, $alpha: .4);
+        color: rgba($color: #000000, $alpha: 0.4);
       }
     }
 
@@ -581,7 +564,6 @@ a:focus {
       color: #fff;
       border-radius: 30px;
     }
-
   }
 
   .map_img-box {
@@ -596,8 +578,6 @@ a:focus {
 
 /* end contact section */
 
-
-
 // info section
 .info_section {
   background-color: #232323;
@@ -610,9 +590,8 @@ a:focus {
   }
 
   .info_insta {
-
     .insta_container {
-      &>div {
+      & > div {
         display: flex;
       }
 
@@ -627,8 +606,6 @@ a:focus {
         background-color: $white;
         padding: 10px 20px;
       }
-
-
     }
   }
 
@@ -643,7 +620,7 @@ a:focus {
       margin: 0;
     }
 
-    >div {
+    > div {
       display: flex;
       align-items: center;
       margin: 20px 0;
@@ -681,11 +658,9 @@ a:focus {
       }
     }
   }
-
 }
 
 // end info section
-
 
 /* footer section*/
 .footer_section {

@@ -16,6 +16,16 @@ const toggleSendButton = () => {
   sendBtn.disabled = !validateInputs();
 };
 
+// const toggleSendButton = () => {
+//   const sendBtn = document.getElementById("sendBtn");
+//   sendBtn.disabled = !validateInputs();
+//   if (sendBtn.disabled) {
+//     sendBtn.classList.add("btn_disabled"); // Add the disabled style
+//   } else {
+//     sendBtn.classList.remove("btn_disabled"); // Remove the disabled style
+//   }
+// };
+
 const sendMail = () => {
   if (!validateInputs()) {
     return; // Prevent sending mail if inputs are not valid
